@@ -38,7 +38,7 @@ class Ball:
 		self.y = self.y_init
 		speed = (self.vx_init ** 2 + self.vy_init ** 2) ** 0.5
 		self.vx = np.random.uniform(-speed * 3.0 / 5.0, speed * 3.0 / 5.0)
-		self.vy = ((speed ** 2 - self.vx ** 2) ** 0.5) * (1.0 if np.random.uniform() < 0.5 else -1.0)
+		self.vy = ((speed ** 2 - self.vx ** 2) ** 0.5) * (-1.0)              #(1.0 if np.random.uniform() < 0.5 else -1.0)
 	def reflect(self):
 		self.vy = -self.vy
 
